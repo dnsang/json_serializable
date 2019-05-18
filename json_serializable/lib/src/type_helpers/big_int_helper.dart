@@ -37,7 +37,7 @@ class BigIntHelper extends TypeHelper {
     return commonNullPrefix(
       context.nullable,
       expression,
-      'BigInt.parse($expression as String)',
+      'BigInt.parse(${expression.toString()})',
     ).toString();
   }
 }
